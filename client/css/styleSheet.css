@@ -1,3 +1,15 @@
 body {
     background-image: url("client/images/Space Wow GIF by Feist.gif");
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    background-size: cover;
+
+    min-height: 100vh;
+
+    Margin: 0;
 }
