@@ -20,10 +20,37 @@ nav{
     margin-right: 120px;
 }
 
-p, h1, h2, h3, blockquote{
+*{
     color: white;
     font-family: garamond, sans-serif;
 }
+
+header {
+    background-image: url("../images/Space Wow GIF by Feist.gif");
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    background-size: cover;
+
+    min-height: 30vh;
+
+    margin: 0;
+    
+}
+
+.headerH1{
+    text-align: center;
+    color: white;
+    font-size: 70px;  
+    padding-top: 70px;
+    font-family: garamond, sans-serif;
+    text-decoration: underline;
+}
+
 
 article{
     text-align: center;
@@ -42,3 +69,12 @@ article{
    a:hover{
     color:rgb(240, 248, 255)
   }
+
+  footer{
+    display: block;
+    height: 50px;
+    background-color: rgb(37, 0, 61);
+    font-family: garamond, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+}
