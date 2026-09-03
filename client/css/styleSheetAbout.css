@@ -1,0 +1,44 @@
+body{
+    background: black;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+    margin: auto;
+    justify-content: center;
+    gap:100px;
+    font-size:30px;
+    font-family: garamond, sans-serif;
+}
+
+nav{
+    height: 50px;
+    background-color: rgb(43, 2, 44);
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+p, h1, h2, h3, blockquote{
+    color: white;
+    font-family: garamond, sans-serif;
+}
+
+article{
+    text-align: center;
+}
+
+  a{
+    text-decoration: none;
+    color: rgb(136, 224, 250)
+  }
+
+
+  a:visited{
+    color:rgb(153, 136, 250)
+  }
+  
+   a:hover{
+    color:rgb(240, 248, 255)
+  }
