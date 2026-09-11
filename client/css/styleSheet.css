@@ -1,28 +1,39 @@
+:root{
+    --bgcolor: black;
+    --mainfont: garamond, sans-serif;
+    --text-color: white;
+    --accent-color: rgb(43, 2, 44);
+    --border-color: white;
+    --link-static: rgb(136, 224, 250);
+    --link-visited: rgb(153, 136, 250);
+    --link-hover: rgb(240, 248, 255);
+
+
+}
+
 body{
-    background-color: black;
+    background-color: var(--bgcolor);
 }
 
 *{
-    color: white;
+    color: var(--text-color);
 }
 
 header {
     background-image: url("../images/Space Wow GIF by Feist.gif");
-
     background-repeat: no-repeat;
-
     background-position: center;
-
     background-attachment: fixed;
-
     background-size: cover;
-
     min-height: 30vh;
-
     margin: 0;
     
 }
 
+.Gif-fade{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
 
 nav ul{
     display: flex;
@@ -34,8 +45,8 @@ nav ul{
     justify-content: center;
     gap:15%;
     font-size:250%;
-    font-family: garamond, sans-serif;
-    background-color: rgb(43, 2, 44);
+    font-family: var(--mainfont);
+    background-color: var(--accent-color);
     margin-left: 20%;
     margin-right: 20%;
     min-width: 55%;
@@ -45,25 +56,29 @@ nav ul{
 
   a{
     text-decoration: none;
-    color: rgb(136, 224, 250)
+    color: var(--link-static);
   }
 
 
   a:visited{
-    color:rgb(153, 136, 250)
+    color: var(--link-visited);
+  }
+
+    a:hover{
+    color: var(--link-hover);
   }
   
-   a:hover{
-    color:rgb(240, 248, 255)
+   a:hover .Gif-fade{
+    opacity: 1;
   }
 
 .header{
     text-align: center;
-    color: white;
+    color: var(--text-color);
     font-size: 300%;  
     padding-top: 3%;
     padding-bottom: 3%;
-    font-family: garamond, sans-serif;
+    font-family: var(--mainfont);
     text-decoration: underline;
 }
 
@@ -77,21 +92,32 @@ nav ul{
     text-align: center;
 }
 
-.Card{
+.item-list{
     display: flex;
-    flex-direction: row;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: space-between;
+}
+
+.Card{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 30%;
+    gap: 3%;
     align-items: center;
     padding: 20px;
     border-radius: 8px;
-    border: solid white 8px;
+    border: solid var(--border-color) 8px;
     margin-bottom: 50px;
     max-width: 100%;
     height: auto;
 }
 
-@media (max-width: 880px){
-    .Card{
+
+
+@media (max-width: 780px){
+    .item-list{
         flex-direction: column;
     }
 }
@@ -100,6 +126,7 @@ nav ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 0;
 }
 
 .image{
@@ -107,8 +134,9 @@ nav ul{
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
-    border: solid white 4px;
+    border: solid var(--border-color) 4px;
     height: auto;
+    min-width: 0;
 }
 
 .Planets, .Squarians{
@@ -118,8 +146,8 @@ nav ul{
 footer{
     display: block;
     height: 50px;
-    background-color: rgb(37, 0, 61);
-    font-family: garamond, sans-serif;
+    background-color: var(--accent-color);
+    font-family: var(--mainfont);
     text-align: center;
     padding-top: 10px;
 }

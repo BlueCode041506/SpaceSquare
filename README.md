@@ -27,4 +27,10 @@ If you want to hear about space circles go to NASA's web page.
 - Text Centered
 - Image Centered, standerized size, and gived a white boarder
 - Styled Links
-- Garamond font, Sans-s=Serif backup
+- Garamond font, Sans-Serif backup
+- made card items
+- applied flex to the cards
+- added fade in gif on hover @ nav links
+- implemented :root
+- removed static color elements, replaced with var elements declaired in :root
+- used @media to allow for thinner screen size with no horizontal scroll
