@@ -18,6 +18,8 @@ If you want to hear about space circles go to NASA's web page.
 - `date_added`(date) - when new square planets/ squarians were added
 - `category`(string) - type/classification of the item
 - `button_that_does_nothing`(bool) - a button that does nothing to our knowlage
+- `feedback`(string) - a feedback input on the add page
+- `suggestions` (string) - a suggestion input for squarians and square planets
 
 ## Project Progress
 
@@ -34,3 +36,8 @@ If you want to hear about space circles go to NASA's web page.
 - implemented :root
 - removed static color elements, replaced with var elements declaired in :root
 - used @media to allow for thinner screen size with no horizontal scroll
+- add.html added and stylized
+- starter table added to about.html and stylized
+- form added to add.html
+- added both required and optional inputs in add form
+- added select, text and radio inputs in add form

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styleSheet.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Square</title>
+  <link rel="icon" type="image/x-icon" href="images/Icon.png">
+</head>
+<body>
+        <nav>
+            <ul>
+            <li><a href="index.html"><img class="Gif-fade" src="images/rainbow-blob-blob.gif" alt="blob blob gif">Index</a></li>
+            <li><a href="about.html"><img class="Gif-fade" src="images/rainbow-blob-blob.gif" alt="blob blob gif">About</a></li>
+            <li><a href="add.html"><img class="Gif-fade" src="images/rainbow-blob-blob.gif" alt="blob blob gif">Add</a></li>
+            </ul>
+        </nav>
+
+          <header class="header">
+
+            <h1>SPACE SQUARE!</h1>
+  
+         </header>
+
+        <div class="add">
+            <form action="add">
+
+                <fieldset>
+                    <legend>Are you a team member? TELL US! <small><em>cause we don't know who we employee...</em></small></legend>
+                    <label for="team-mem">Your name!
+                        <input required id="team-mem" type="text" minlength="1" maxlength="32"/>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Was a friend or loved one a member? WE'RE SORRY FOR YOUR LOSS! <small><em>space is dangerous...</em></small></legend>
+                    <label for="memorial">Thier name!
+                        <input id="memorial" type="text" minlength="1" maxlength="32"/>
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+
+                    <legend>What do you Think of Our Page? be honest!</legend>
+                    <label for="feedback1">Great!<input name="feedback" id="feedback1" type="radio"></label><br>
+                    <label for="feedback2">Awesome!<input name="feedback" id="feedback2" type="radio"/></label><br>
+                    <label for="feedback3">No comment<input name="feedback" id="feedback3" type="radio"/></label>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Know about a Squarian or Square planet that we don't? what? do you think you're better than us?</legend>
+                    <br>
+                    <select class="select">
+                        <option>yes</option>
+                        <option>obviously</option>
+                    </select>
+                    <br>
+                    
+                    <label for="sugtype"> Fine. Tell us about it. Nerd.
+                        <br>
+                        Type:
+                        <select class="select" id="sugtype">
+                            <option>Squarian</option>
+                            <option>Square Planet</option>
+                        </select>
+                        </label>
+
+                        <label for="sugdes"> Description:
+                            <input id="sugdes" type="text" >
+                        </label>
+
+                </fieldset>
+
+                <button class="submit" type="submit">Submit</button>
+
+             </form>
+
+        </div>
+
+
+    <footer>
+        <p>All Lrongs conserved</p>
+    </footer>
+</body>
+
+</html>

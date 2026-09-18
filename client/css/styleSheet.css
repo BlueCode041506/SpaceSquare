@@ -143,6 +143,99 @@ nav ul{
     text-align: center;
 }
 
+.add{
+  
+    text-align: center;
+    height: auto;
+
+}
+
+.select{
+    background-color: var(--bgcolor);
+}
+
+
+
+input{
+    background-color: var(--bgcolor);
+}
+
+form{
+    max-width: 40rem;
+    margin: 0 auto 50px;
+}
+
+fieldset{
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+}
+
+legend{
+    font-family: var(--mainfont);
+    font-size: 120%;
+    padding: 0 10px;
+}
+
+label{
+    display: inline-block;
+    margin: 6px 0;
+}
+
+input[type="text"], select{
+    font-size:100%;
+    padding: 8px;
+    margin: 6px 0 10px;
+    border:2px solid var(--border-color);
+    border-radius: 4px;
+    max-width: 100%;
+}
+
+.submit{
+    font-size: 110%;
+    padding: 10px 24px;
+    border: 2px solid var(--link-static);
+    border-radius: 4px;
+    color: var(--link-static);
+    background-color: var(--accent-color);
+}
+
+.submit:hover{
+    color: var(--accent-color);
+    background-color: var(--link-static);
+}
+
+table{
+    border-collapse: collapse;
+    max-width: 100%;
+}
+
+caption{
+    font-family: var(--mainfont);
+    font-size: 150%;
+    padding-bottom: 10px;
+}
+
+th, td{
+    border: 2px solid var(--border-color);
+    padding: 8px 14px;
+    text-align: left;
+}
+
+thead th{
+    background-color: var(--accent-color);
+}
+
+tbody th{
+    color: var(--link-static);
+}
+
+.table-wrap{
+    overflow-x:auto;
+    max-width:100%;
+}
+
 footer{
     display: block;
     height: 50px;
