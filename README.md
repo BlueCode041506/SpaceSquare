@@ -41,3 +41,7 @@ If you want to hear about space circles go to NASA's web page.
 - form added to add.html
 - added both required and optional inputs in add form
 - added select, text and radio inputs in add form
+- added app.js to js folder
+- declared four const variables (two num, one string, one bool)
+- created string from template literal
+- created numaric calculation useing declared variables
