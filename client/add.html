@@ -9,6 +9,13 @@
   <link rel="icon" type="image/x-icon" href="images/Icon.png">
 </head>
 <body>
+    <fieldset class="add">
+        <label for="search">
+            <input class="search" required id="search" type="txt" placeholder="search by id"/>
+            <button class="submit">Search</button>
+        </label>
+    </fieldset>
+    
         <nav>
             <ul>
             <li><a href="index.html"><img class="Gif-fade" src="images/rainbow-blob-blob.gif" alt="blob blob gif">Index</a></li>
@@ -32,6 +39,7 @@
                         <input required id="team-mem" type="text" minlength="1" maxlength="32"/>
                     </label>
                 </fieldset>
+
                 <fieldset>
                     <legend>Was a friend or loved one a member? WE'RE SORRY FOR YOUR LOSS! <small><em>space is dangerous...</em></small></legend>
                     <label for="memorial">Thier name!
@@ -40,16 +48,13 @@
                 </fieldset>
                 
                 <fieldset>
-
                     <legend>What do you Think of Our Page? be honest!</legend>
                     <label for="feedback1">Great!<input name="feedback" id="feedback1" type="radio"></label><br>
                     <label for="feedback2">Awesome!<input name="feedback" id="feedback2" type="radio"/></label><br>
                     <label for="feedback3">No comment<input name="feedback" id="feedback3" type="radio"/></label>
-
                 </fieldset>
 
                 <fieldset>
-
                     <legend>Know about a Squarian or Square planet that we don't? what? do you think you're better than us?</legend>
                     <br>
                     <select class="select">
@@ -70,7 +75,6 @@
                         <label for="sugdes"> Description:
                             <input id="sugdes" type="text" >
                         </label>
-
                 </fieldset>
 
                 <button class="submit" type="submit">Submit</button>

@@ -10,6 +10,16 @@
 </head>
 
 <body>
+  <fieldset class="add">
+    <label for="search">
+      <input class="search" required id="txtSearch" type="txt" placeholder="search by id"/>
+      <button class="submit" id="btnSearch">Search</button>
+    </label>
+    <p>prefix: 1 for Alien, 2 for Planet</p>
+    <H4 id="searchRes"></H4>
+
+  </fieldset>
+
   <nav>
     <ul>
    <li><a href="index.html"><img class="Gif-fade" src="images/rainbow-blob-blob.gif" alt="blob blod gif">Index</a></li>
@@ -49,6 +59,16 @@
       <p><strong>New Space squarian found!</strong></p> 
 
 <div class="item-list">
+
+  <div class="Card">
+    <img class="image" src = "images\Squmpkin.png" alt = "Square Pumpkin alien">
+    <div class="Card-Text">
+      <p><u>This is Squmpkin!</u></p>
+      <p><strong>WE ASKED SQUMPKIN SOME QUESTIONS!</strong></p>
+      <blockqoute>"Did you know theres a light over in the frankenstiens place?"</blockqoute>
+      <p>No, we didnt, but Squmpkin assures us its burning in the fireplace.</p>
+    </div>
+  </div>
 
       <div class="Card">
         <img class="image" src ="images\HuddyBolly.png" alt = "robot looking square alien">
@@ -103,6 +123,14 @@
     <p><em>A catalouge of square planets</em></p>
       <p><strong>New square planet found!</strong></p>
     <div class="item-list">
+      <div class="Card">
+        <img class="image" src="images\PlanetSpooks.png" alt="skelatal looking planet">
+        <div class="Card-Text">
+          <p><u>This is Planet Spooks!</u></p>
+          <p><em>It is hollow inside!</em></p>
+          <p><small>us too Spooks, us too...</small></p>
+        </div>
+      </div>
 
       <div class="Card">
         <img class="image" src="images\PixelPlanet.png" alt="grid planet with an array of colors that resembles the loss comic">
@@ -148,6 +176,7 @@
     <p>All Wrongs Preserved</p>
 </footer>
 <script src="js/app.js"></script>
+<script src="js/data.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,23 @@
+Name: 
+Thomas Staples
+
+Project Title:
+Space Square
+
+GitHub Repository:
+https://github.com/BlueCode041506/SpaceSquare
+
+Live fronted:
+https://citc2375-tstap-project.onrender.com 
+
+Commit ID:
+4786608
+
+Demonstration Format:
+Video
+
+URL: https://youtu.be/SaSvmlKa4k4 
+
+
+
+Checkpoint notes:

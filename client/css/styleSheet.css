@@ -30,6 +30,21 @@ header {
     
 }
 
+.search{
+    text-align: center;
+    font-size: 110%;
+    padding: 10px 24px;
+    border: 2px solid var(--link-static);
+    border-radius: 4px;
+    color: var(--link-static);
+    background-color: var(--accent-color);
+}
+
+::placeholder{
+    color: var(--link-static);
+}
+
+
 .Gif-fade{
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
