@@ -45,3 +45,9 @@ If you want to hear about space circles go to NASA's web page.
 - declared four const variables (two num, one string, one bool)
 - created string from template literal
 - created numaric calculation useing declared variables
+- added data.js file
+- created item array
+- created search bar on idex.html
+- linked search bar with array search function in data.js
+- created search by category function
+- created json converter

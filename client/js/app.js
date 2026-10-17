@@ -21,3 +21,6 @@ currently have "${totalItems}" total items with "${squarePlanet}" coming from Sq
 
 console.log(indexSentence);
 console.log(totalItems);
+
+console.log(countByCatagory());
+console.log(jasonBounce());

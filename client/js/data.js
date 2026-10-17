@@ -27,4 +27,29 @@ document.getElementById("btnSearch").onclick = function searchById(){
             document.getElementById("searchRes").textContent = `${notFound}`;
             }
         }
-    
+
+function countByCatagory(){
+    const targetCatagories = ['Planet', 'Squalian']
+
+    const filteredResults ={
+        Planet:[],
+        Squalian:[]
+    }
+
+    for(const item of mainpageItems){
+        if(targetCatagories.includes(item.catagory)){
+            filteredResults[item.catagory].push(item);
+        }
+    }
+    console.log(filteredResults);
+}
+
+function jasonBounce(){
+let jasonOut = JSON.stringify(mainpageItems, null, 2);
+
+console.log(jasonOut);
+
+let jasonIn = JSON.parse(jasonOut);
+
+console.log(jasonIn);
+}
