@@ -51,3 +51,7 @@ If you want to hear about space circles go to NASA's web page.
 - linked search bar with array search function in data.js
 - created search by category function
 - created json converter
+- I chose grid over flex box for the item list element because flex box was causing the card to orientate oddly. 
+    Since squarians and planets are the same format split by unique titles and text, .item-list is used on both.
+- cleaned up css to make more readable
+- fixed js errors

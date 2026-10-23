@@ -1,8 +1,8 @@
 const siteName = "Space Square";
 
-const squarePlanet = 3;
+const squarePlanet = mainpageItems.filter(item=>item.catagory==="Planet").length;
 
-const Squarian = 3;
+const Squarian = mainpageItems.filter(item=>item.catagory==="Squalian").length;
 
 const Square = true;
 
@@ -22,5 +22,22 @@ currently have "${totalItems}" total items with "${squarePlanet}" coming from Sq
 console.log(indexSentence);
 console.log(totalItems);
 
-console.log(countByCatagory());
-console.log(jasonBounce());
+console.log(getByCatagory("Planet"));
+console.log(getByCatagory("Squalian"));
+
+jasonBounce();
+
+document.getElementById("btnSearch").onclick = function searchById(){
+    const search = parseInt(document.getElementById("txtSearch").value);
+
+    const foundItem = idRetrieve(search);
+
+    const notFound = "Item not found...";
+
+
+        if (foundItem){
+            document.getElementById("searchRes").textContent = `${foundItem.Name} (${foundItem.catagory}) - ${foundItem.desc} Score: ${foundItem.score}`;
+        }else{
+            document.getElementById("searchRes").textContent = `${notFound}`;
+            }
+        }

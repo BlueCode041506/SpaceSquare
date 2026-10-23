@@ -1,4 +1,13 @@
+/*The comment markers are to denotate where an 
+element iss most predominatly used, 
+not where it is exclusive.
+It's to help me find elements I need to
+edit on the page of interest.*/
+
+/*root css settings*/
+
 :root{
+    /*default colors*/
     --bgcolor: black;
     --mainfont: garamond, sans-serif;
     --text-color: white;
@@ -17,6 +26,8 @@ body{
     color: var(--text-color);
 }
 
+
+
 header {
     background-image: url("../images/Space Wow GIF by Feist.gif");
     background-repeat: no-repeat;
@@ -30,8 +41,10 @@ header {
 
 .search{
     text-align: center;
-    font-size: 110%;
-    padding: 10px 24px;
+    font-size: 3vh;
+    width: 50vw;
+    box-sizing: border-box;
+    padding: 1vh 0vh;
     border: 2px solid var(--link-static);
     border-radius: 4px;
     color: var(--link-static);
@@ -41,7 +54,6 @@ header {
 ::placeholder{
     color: var(--link-static);
 }
-
 
 .Gif-fade{
     opacity: 0;
@@ -54,18 +66,17 @@ nav ul{
     flex-wrap: wrap;
     list-style: none;
     padding-top: 0;
-    margin: auto;
     justify-content: center;
-    gap:15%;
-    font-size:250%;
+    gap: 5vw;
+    font-size: 5vh;
     font-family: var(--mainfont);
     background-color: var(--accent-color);
-    margin-left: 20%;
-    margin-right: 20%;
-    min-width: 55%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  
 }
-
-
 
   a{
     text-decoration: none;
@@ -88,63 +99,42 @@ nav ul{
 .header{
     text-align: center;
     color: var(--text-color);
-    font-size: 300%;  
-    padding-top: 3%;
-    padding-bottom: 3%;
+    font-size: 5vh;  
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     font-family: var(--mainfont);
     text-decoration: underline;
 }
+/*end of root css settings*/
 
-@media (max-width: 300px){
-    .header{
-        font-size: 135%;
-    }
-}
-
-.sectionA{
+/*index.html*/
+section{
     text-align: center;
 }
 
 .item-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    flex-wrap: wrap;
-    gap: 2%;
-    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(50vh, 1fr));
+    gap: 5vh;
+    justify-items:stretch;
+}
+
+.Planets, .Squarians{
+    text-align: center;
 }
 
 .Card{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    flex: 0 1 30%;
-    gap: 3%;
+    gap: 3vh;
     align-items: center;
-    padding: 20px;
+    padding: 3vh;
     border-radius: 8px;
     border: solid var(--border-color) 8px;
-    margin-bottom: 50px;
+    margin-bottom: 3vh;
     max-width: 100%;
     height: auto;
-}
-
-
-
-@media (max-width: 780px){
-    .item-list{
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        flex-wrap: wrap;
-        gap: 1%;
-        justify-content: space-between;
-        display: grid;
-    }
-}
-
-.Card-Text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 0;
 }
 
 .image{
@@ -157,60 +147,70 @@ nav ul{
     min-width: 0;
 }
 
-.Planets, .Squarians{
-    text-align: center;
+.Card-Text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
 }
+
+@media (max-width: 780px){
+    .item-list{
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        flex-wrap: wrap;
+        gap: 5vh;
+        display: grid;
+        justify-items: center;
+    }
+}
+/*end of index.html*/
+
+/*add.html*/
 
 .add{
     text-align: center;
     height: auto;
 }
 
-.select{
-    background-color: var(--bgcolor);
-}
-
-
-
-input{
+input, .select{
     background-color: var(--bgcolor);
 }
 
 form{
     max-width: 40rem;
-    margin: 0 auto 50px;
+    margin: 5vh auto 5vh;
 }
 
 fieldset{
     border: 2px solid var(--border-color);
-    border-radius: 8px;
-    margin-bottom: 20px;
-    padding: 15px 20px;
+    border-radius: 1vh;
+    margin-bottom: 5vh;
+    padding: 1vw 5vw;
 }
 
 legend{
     font-family: var(--mainfont);
-    font-size: 120%;
-    padding: 0 10px;
+    font-size: 3vh;
+    padding: 0 1vw;
 }
 
 label{
     display: inline-block;
-    margin: 6px 0;
+    margin: 1vw;
 }
 
 input[type="text"], select{
     font-size:100%;
-    padding: 8px;
-    margin: 6px 0 10px;
+    padding: 1vh;
+    margin: 1vh 0 1vh;
     border:2px solid var(--border-color);
     border-radius: 4px;
     max-width: 100%;
 }
 
 .submit{
-    font-size: 110%;
-    padding: 10px 24px;
+    font-size: 3vh;
+    padding: 1vh 1vw;
     border: 2px solid var(--link-static);
     border-radius: 4px;
     color: var(--link-static);
@@ -221,7 +221,9 @@ input[type="text"], select{
     color: var(--accent-color);
     background-color: var(--link-static);
 }
+/*end of add.html */
 
+/*about.html*/
 table{
     border-collapse: collapse;
     max-width: 100%;
@@ -229,14 +231,13 @@ table{
 
 caption{
     font-family: var(--mainfont);
-    font-size: 150%;
-    padding-bottom: 10px;
+    font-size: 5vh;
 }
 
 th, td{
-    border: 2px solid var(--border-color);
-    padding: 8px 14px;
-    text-align: left;
+    border: 3px solid var(--border-color);
+    padding: 1vh 1vw;
+    text-align: center;
 }
 
 thead th{
@@ -249,14 +250,16 @@ tbody th{
 
 .table-wrap{
     overflow-x:auto;
-    max-width:100%;
+    max-width: 100%;
 }
+/*end of about.html*/
 
 footer{
     display: block;
-    height: 50px;
+    height: 10vh;
     background-color: var(--accent-color);
     font-family: var(--mainfont);
     text-align: center;
-    padding-top: 10px;
+    font-size:3vh;
+    padding-top: 1vh;
 }
