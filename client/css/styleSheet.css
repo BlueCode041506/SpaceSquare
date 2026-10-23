@@ -7,8 +7,6 @@
     --link-static: rgb(136, 224, 250);
     --link-visited: rgb(153, 136, 250);
     --link-hover: rgb(240, 248, 255);
-
-
 }
 
 body{
@@ -108,7 +106,8 @@ nav ul{
 }
 
 .item-list{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     flex-wrap: wrap;
     gap: 2%;
     justify-content: space-between;
@@ -133,7 +132,11 @@ nav ul{
 
 @media (max-width: 780px){
     .item-list{
-        flex-direction: column;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        flex-wrap: wrap;
+        gap: 1%;
+        justify-content: space-between;
+        display: grid;
     }
 }
 
@@ -159,10 +162,8 @@ nav ul{
 }
 
 .add{
-  
     text-align: center;
     height: auto;
-
 }
 
 .select{
