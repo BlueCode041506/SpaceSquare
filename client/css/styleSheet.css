@@ -111,7 +111,7 @@ nav ul{
 section{
     text-align: center;
 }
-
+/*card container*/
 .item-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50vh, 1fr));
