@@ -55,3 +55,7 @@ If you want to hear about space circles go to NASA's web page.
     Since squarians and planets are the same format split by unique titles and text, .item-list is used on both.
 - cleaned up css to make more readable
 - fixed js errors
+- moved away from hardcoded cards to rendered in ones
+- added a filter
+- added a favorites mechanism 
+- applied local storage to both filter and favorites
